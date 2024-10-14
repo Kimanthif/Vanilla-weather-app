@@ -4,14 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla Weather App</title>
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <h1></h1>
-    <footer>
-      Coded by<a href="https://github.com/Kimanthif"> Felistus Kimanthi </a> and
-      is open-sourced on
-      <a href="https://github.com/Kimanthif/Vanilla-weather-app">Github </a> and
-      hosted on <a href="https://felistus-weather.netlify.app/">Netlfiy </a>
-    </footer>
+    <div class="weather-app">
+      <header>
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">Nairobi</h1>
+            <p class="weather-app-details">
+              Sunday 12:09, few clouds
+              <br />
+              Humidity: <strong>33%</strong>, Wind: <strong>5.07km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature">🌤️ 12°C</div>
+        </div>
+      </main>
+
+      <footer>
+        Project coded by<a href="https://github.com/Kimanthif" target="_blank">
+          Felistus Kimanthi
+        </a>
+        , is open-sourced on
+        <a
+          href="https://github.com/Kimanthif/Vanilla-weather-app"
+          target="_blank"
+          >Github
+        </a>
+        and hosted on
+        <a href="https://felistus-weather.netlify.app/" target="_blank"
+          >netlify
+        </a>
+      </footer>
+    </div>
   </body>
 </html>
